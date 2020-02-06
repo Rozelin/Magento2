@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 if [ $@ ]; then
-  composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition:$1 . ;
+  composer create-project --repository-url=https://ea59df767d86e43f2a0bd009bcfd0dbb:591143ca177c46151efc80599d568596@repo.magento.com/ magento/project-enterprise-edition:$1 . ;
 else
-  composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition . ;
+  composer create-project --repository-url=https://ea59df767d86e43f2a0bd009bcfd0dbb:591143ca177c46151efc80599d568596@repo.magento.com/ magento/project-enterprise-edition=2.3.3 . ;
 fi
 chmod u+w -R ./var ./vendor ./pub/static ./pub/media ./app/etc \
 && chmod u+x ./bin/magento \
